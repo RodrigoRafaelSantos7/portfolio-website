@@ -6,7 +6,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 const mono = IBM_Plex_Mono({
-  weight: ["100", "200", "300", '400', '500', '600', '700'],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-IBM_Plex_Mono",
 });
@@ -24,8 +24,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mono.variable}>
-        <Header/>
-        {children}</body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
