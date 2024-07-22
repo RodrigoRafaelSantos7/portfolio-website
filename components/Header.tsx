@@ -23,11 +23,10 @@ const Header = () => {
             <Button>Hire me</Button>
           </Link>
         </div>
-      </div>
-
-      {/* mobile nav */}
-      <div className="lg:hidden">
-        <MobileNav />
+        {/* mobile nav */}
+        <div className="lg:hidden">
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
