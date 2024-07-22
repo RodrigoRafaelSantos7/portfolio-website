@@ -5,6 +5,7 @@ import "./globals.css";
 //Components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
+import StairTransition from "@/components/StairTransition";
 
 const mono = IBM_Plex_Mono({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -26,6 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={mono.variable}>
         <Header />
+        <StairTransition />
         <PageTransition>{children}</PageTransition>
       </body>
     </html>
