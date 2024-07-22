@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
+//Components
+import Header from "@/components/Header";
+
 const mono = IBM_Plex_Mono({
   weight: ["100", "200", "300", '400', '500', '600', '700'],
   subsets: ["latin"],
@@ -20,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mono.variable}>{children}</body>
+      <body className={mono.variable}>
+        <Header/>
+        {children}</body>
     </html>
   );
 }
