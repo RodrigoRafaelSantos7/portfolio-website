@@ -1,6 +1,4 @@
-import { animate, easeInOut, motion } from "framer-motion";
-import { init } from "next/dist/compiled/webpack/webpack";
-import { exit } from "process";
+import { motion } from "framer-motion";
 import React from "react";
 
 //variants
