@@ -10,7 +10,7 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           {/* Text */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left order-2 lg:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />{" "}
@@ -48,7 +48,7 @@ const Home = () => {
             </div>
           </div>
           {/* Photo */}
-          <div>
+          <div className="order-1 lg:order-none mb-8 lg:mb-0">
             <Photo />
           </div>
         </div>
