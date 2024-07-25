@@ -1,24 +1,29 @@
+"use client";
+
+import { IconCloudDemo } from "@/components/IconCloud";
 import Photo from "@/components/Photo";
+import { Slider } from "@/components/Slider";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
+import IconCloud from "@/components/ui/icon-cloud";
 import { LinkPreview } from "@/components/ui/link-preview";
-import TypingAnimation from "@/components/ui/typing-animation";
+import { Icon } from "lucide-react";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
   return (
-    <section className="h-full">
+    <section className="h-full overflow-hidden">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
+        <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-12">
           {/* Text */}
           <div className="text-center lg:text-left order-2 lg:order-none">
-            <span className="text-xl">Computer Science</span>
+            <span className="text-xl">Computer Scientist</span>
             <h1 className="h1 mb-6">
-              Hello I'm <br />{" "}
+              Hello I&apos;m <br />{" "}
               <span className="text-accent">Rodrigo Santos</span>{" "}
             </h1>
             <p className="max-w-[530px] mb-9 text-secondary">
-              I'm a{" "}
+              I&apos;m a{" "}
               <LinkPreview
                 url="https://www.di.fct.unl.pt/en"
                 className="underline text-accent"
@@ -60,6 +65,10 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Slider
+        containerStyles="flex gap-8"
+        iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-xl hover:bg-accent hover:text-primary hover:transition-all duration-500"
+      />
     </section>
   );
 };
