@@ -19,7 +19,7 @@ const Photo = () => {
             opacity: 1,
             transition: { duration: 2.4, delay: 0.4, ease: "easeInOut" },
           }}
-          className="relative w-[350px] h-[350px] lg:w-[350px] lg:h-[350px] flex items-center justify-center"
+          className="relative w-[350px] h-[350px] flex items-center justify-center"
         >
           <Image
             src="/assets/profile.png"
@@ -39,7 +39,7 @@ const Photo = () => {
             <motion.circle
               cx="176"
               cy="176"
-              r="168"
+              r="160"
               stroke="#1689C8"
               strokeWidth="4"
               strokeLinecap="round"

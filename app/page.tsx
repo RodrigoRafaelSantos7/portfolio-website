@@ -1,7 +1,8 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Social";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { LinkPreview } from "@/components/ui/link-preview";
+import TypingAnimation from "@/components/ui/typing-animation";
 import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
@@ -11,20 +12,26 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           {/* Text */}
           <div className="text-center lg:text-left order-2 lg:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Computer Science</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />{" "}
               <span className="text-accent">Rodrigo Santos</span>{" "}
             </h1>
             <p className="max-w-[530px] mb-9 text-secondary">
               I'm a{" "}
-              <Link href="https://www.di.fct.unl.pt/en" className="underline">
+              <LinkPreview
+                url="https://www.di.fct.unl.pt/en"
+                className="underline text-accent"
+              >
                 Computer Science
-              </Link>{" "}
+              </LinkPreview>{" "}
               student currently at{" "}
-              <Link href="https://www.unl.pt/en" className="underline">
+              <LinkPreview
+                url="https://www.unl.pt/en"
+                className="underline text-accent"
+              >
                 Universidade Nova de Lisboa
-              </Link>
+              </LinkPreview>
               . My passion is theoretical computer science, with an emphasis on
               complexity, cryptography, and pseudorandomness. I love building
               things and I excel at crafting digital experiences.
